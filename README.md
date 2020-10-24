@@ -1,6 +1,13 @@
 # G213Colors
 A application to change the key colors on a Logitech G213 Prodigy Gaming Keyboard using [SebiTimeWaster](https://github.com/SebiTimeWaster)'s [G213Colors](https://github.com/SebiTimeWaster/G213Colors).
 
+<br>
+
+## Fork Note
+This fork was made to ensure out of the box compatibilty with python3 without an alias. A permission setting was also changed for the `/etc/G213Colors.conf` file. This program works best with correct group permissions for the exact usb device.
+
+<br>
+
 ## Supported devices
 
 * G213 keyboard
@@ -42,7 +49,7 @@ You can find the app in your menu after installation.
 You can call the `main.py` script like this:
 
 ```Bash
-python main.py
+python3 main.py
 ```
 
 G213Colors needs to be run as root as long as long as your user doesn't have access privileges for the USB device.
@@ -52,7 +59,7 @@ In order to run the program without root privileges you have to create a [udev r
 After rebooting your pc you can restore the pre-reboot state by running the app with parameter -t
 
 ```Bash
-sudo g213colors-gui -t
+python3 /usr/bin/g213colors-gui -t
 ```
 
 You can also do this automatically at reboot by enabling the systemd service.
