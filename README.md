@@ -42,7 +42,7 @@ You can find the app in your menu after installation.
 You can call the `main.py` script like this:
 
 ```Bash
-python main.py
+python3 main.py
 ```
 
 G213Colors needs to be run as root as long as long as your user doesn't have access privileges for the USB device.
@@ -52,7 +52,7 @@ In order to run the program without root privileges you have to create a [udev r
 After rebooting your pc you can restore the pre-reboot state by running the app with parameter -t
 
 ```Bash
-sudo g213colors-gui -t
+python3 /usr/bin/g213colors-gui -t
 ```
 
 You can also do this automatically at reboot by enabling the systemd service.
