@@ -1,6 +1,13 @@
 # G213Colors
 A application to change the key colors on a Logitech G213 Prodigy Gaming Keyboard using [SebiTimeWaster](https://github.com/SebiTimeWaster)'s [G213Colors](https://github.com/SebiTimeWaster/G213Colors).
 
+<br>
+
+## Fork Note
+This fork was made to ensure out of the box compatibilty with python3 without an alias. A permission setting was also changed for the `/etc/G213Colors.conf` file. This program works best with correct group permissions for the exact usb device.
+
+<br>
+
 ## Supported devices
 
 * G213 keyboard
